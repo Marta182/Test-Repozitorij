@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predavanje 4</title>
+  </head>
+  <body>
+    <!-- Multimedija - grafika -->
+    <img
+      width="500"
+      src="https://www.gamespot.com/a/uploads/screen_kubrick/1179/11799911/4044723-witcher.jpg"
+      alt="witcher"
+    />
+    <img width="300" src="./pumskin.jpg" alt="cat" />
+    <!-- Forme - nastavak -->
+    <form
+      action="#"
+      method="get"
+      oninput='bonus.value=parseInt(parseInt(placa.value)*0.2).toString() + "kn"'
+    >
+      <label for="post">Unesite sadržaj svog posta</label><br /><br />
+      <textarea name="post" id="post" cols="200" rows="10">
+ Upisite svoj post </textarea
+      ><br /><br />
+      <button type="button">Klik</button><br /><br />
+      <fieldset>
+        <legend>koliko volimo mačke</legend>
+        <label for="fname">Koliko?</label><br />
+        <input type="text" id="fname" name="fname" value="Puno" /><br />
+        <label for="lname">Koliko?</label><br />
+        <input type="text" id="lname" name="lname" value="Masu" />
+      </fieldset>
+      <br /><br />
+      <label for="country">Odaberite drzavu</label>
+      <input list="country" name="country" />
+      <datalist id="country">
+        <option value="Hrvatska"></option>
+        <option value="Kanada"></option>
+        <option value="Italija"></option></datalist
+      ><br /><br />
+
+      <!-- Output -->
+      <label for="placa">Odaberite iznos godišnje plaće:</label>
+      <input
+        id="placa"
+        name="placa"
+        type="range"
+        min="100000"
+        max="1000000"
+        value="500000"
+      /><br />
+      <label for="bonus">Predviđeni bonus za potpisivanje ugovora</label>
+      <output name="bonus" for="placa"></output><br /><br />
+    </form>
+  </body>
+</html>

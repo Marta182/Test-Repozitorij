@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadacaforms2</title>
+  </head>
+  <body
+    style="
+      background-color:whitesmoke;
+      font-family:fantasy
+      color:gray;
+      align-items: center;
+      text-align: center;
+    "
+  >
+  <form
+  action="#"
+  method="get"
+  oninput="witchergets.value=(parseInt(coin.value)-10).toString()"
+>
+    <h1>Toss a coin to your witcher</h1>
+    <fieldset
+      style="
+        border-color: darkgray;
+        border-style: ridge;
+      "
+    >
+      <img
+        width="400"
+        src="https://www.gamespot.com/a/uploads/screen_kubrick/1179/11799911/4044723-witcher.jpg"
+        alt="witcher"
+      />
+      <br /><br />
+    
+    
+        <legend>The Witcher saga</legend>
+        <label for="character">Name your favorite character in the books</label>
+        <br />
+        <input
+          type="text"
+          id="character"
+          name="character"
+          value="Dandelion?"
+        /><br /><br />
+        <label for="book-select">Choose your favorite book:</label>
+        <br />
+        <select name="books" id="book-select">
+          <option value="">--Please choose an option--</option>
+          <option value="Sword of Destiny ">Sword of Destiny</option>
+          <option value="The Last Wish">The Last Wish</option>
+          <option value="Blood of Elves">Blood of Elves</option>
+          <option value="Time of Contempt">Time of Contempt</option>
+          <option value="Baptism of Fire">Baptism of Fire</option>
+          <option value="The Tower of the Swallow">The Tower of the Swallow </option>
+          <option value="The Lady of the Lake">The Lady of the Lake</option>
+          <option value="Season of Storms">Season of Storms</option>
+        </select>
+        <br /><br />
+        <label for="games">Choose your favorite game</label><br>
+        <input list="games" name="games" />
+        <datalist id="games">
+          <option value="The Witcher"></option>
+          <option value="The Witcher 2: Assassins of Kings"></option>
+          <option value="The Witcher 3: Wild Hunt"></option></datalist
+        ><br /><br />
+        <button type="button">Submit</button><br /><br />
+
+        <label for="post"
+          >Tell me why do you like (or don't like) the Witcher saga</label
+        ><br /><br />
+        <textarea name="post" id="post" cols="70" rows="10">type here...</textarea
+        ><br /><br />
+
+        <label for="coin">How much coin will you toss to the witcher?</label>
+        <input
+          id="coin"
+          name="coin"
+          type="range"
+          min="10"
+          max="1000"
+          value="100"
+        />
+        <br />
+        <label for="witchergets">
+          How much coins will the witcher get (after taxes)</label
+        >
+        <output name="witchergets" for="coin"></output>
+      </form>
+    </fieldset>
+  </body>
+</html>
