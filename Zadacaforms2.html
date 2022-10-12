@@ -10,29 +10,24 @@
     style="
       background-color:whitesmoke;
       font-family:fantasy
-      color:gray
+      color:gray"
   >
-  <form
-  action="#"
-  method="get"
-  oninput="witchergets.value=(parseInt(coin.value)-10).toString()"
->
-    <h1>Toss a coin to your Witcher</h1>
-    <fieldset
-      style="
-        border-color: darkgray;
-        border-style: ridge;
-        width: fit-content;
-      "
+    <form
+      action="#"
+      method="get"
+      oninput="witchergets.value=(parseInt(coin.value)-10).toString()"
     >
-      <img
-        width="400"
-        src="https://www.gamespot.com/a/uploads/screen_kubrick/1179/11799911/4044723-witcher.jpg"
-        alt="witcher"
-      />
-      <br /><br />
-    
-    
+      <h1>Toss a coin to your Witcher</h1>
+      <fieldset
+        style="border-color: darkgray; border-style: ridge; width: fit-content"
+      >
+        <img
+          width="400"
+          src="https://www.gamespot.com/a/uploads/screen_kubrick/1179/11799911/4044723-witcher.jpg"
+          alt="witcher"
+        />
+        <br /><br />
+
         <legend>The Witcher saga</legend>
         <label for="character">Name your favorite character in the books</label>
         <br />
@@ -51,12 +46,14 @@
           <option value="Blood of Elves">Blood of Elves</option>
           <option value="Time of Contempt">Time of Contempt</option>
           <option value="Baptism of Fire">Baptism of Fire</option>
-          <option value="The Tower of the Swallow">The Tower of the Swallow </option>
+          <option value="The Tower of the Swallow">
+            The Tower of the Swallow
+          </option>
           <option value="The Lady of the Lake">The Lady of the Lake</option>
           <option value="Season of Storms">Season of Storms</option>
         </select>
         <br /><br />
-        <label for="games">Choose your favorite game</label><br>
+        <label for="games">Choose your favorite game</label><br />
         <input list="games" name="games" />
         <datalist id="games">
           <option value="The Witcher"></option>
@@ -68,7 +65,8 @@
         <label for="post"
           >Tell me why do you like (or don't like) the Witcher saga</label
         ><br /><br />
-        <textarea name="post" id="post" cols="70" rows="10">type here...</textarea
+        <textarea name="post" id="post" cols="70" rows="10">
+type here...</textarea
         ><br /><br />
 
         <label for="coin">How much coin will you toss to the witcher?</label>
@@ -85,7 +83,7 @@
           How much coins will the witcher get (after taxes)</label
         >
         <output name="witchergets" for="coin"></output>
-      </form>
-    </fieldset>
+      </fieldset>
+    </form>
   </body>
 </html>
