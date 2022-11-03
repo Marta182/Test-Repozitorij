@@ -1,0 +1,103 @@
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+header:hover {
+    background-color: aqua;
+}
+
+td {
+    border: 1px solid black;
+    padding-block-end: 10px
+}
+
+tr:nth-child(2n+1) {
+    background-color: aqua;
+}
+
+tr:nth-child(2n) {
+    background-color: beige;
+}
+
+img:last-child {width: 20%;}
+
+img:not(img:last-child) {width: 50%;}
+
+p:first-of-type:not(p:nth-child(2)) {
+    background-color: aquamarine;
+}
+
+h1:nth-of-type(1) {
+    background-color: blueviolet;
+}
+
+.biti-ce-u-provjeri::after {
+    content: "Biti će u provjeri";
+    background-color:yellowgreen;
+}
+
+::marker {
+    content:"#";
+    font-size: 30px;
+}
+
+::selection {
+    color: aliceblue;
+    font: 23px;
+}
+
+main dt {
+    background-color: blue;
+}
+
+dl > dt {
+    color: violet;
+}
+
+div + div {
+    transform: rotateZ(30deg);
+}div ~ h1 {
+    font-size: 36px;
+}
+
+.dropbtn {
+    background-color: aquamarine; color: whitesmoke; padding: 16px; font-size: 20px; border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:darkcyan;
+    min-width: 160px;
+  }
+  
+  .dropdown-content a {
+    color:white;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: aquamarine;}
+  
+  .dropdown:hover .dropdown-content {display:block;}

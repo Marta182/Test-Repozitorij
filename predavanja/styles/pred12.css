@@ -1,0 +1,29 @@
+.container1 {
+    display: flex;
+    height: 200px;
+    flex-flow: row wrap;
+    background-color: aquamarine;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container1 > div {
+    background-color: coral;
+}
+
+.container2 {
+    display: flex;
+    height: 200px;
+    flex-flow: column wrap;
+    background-color: aquamarine;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.container2 > div {
+    background-color: coral;
+
+}

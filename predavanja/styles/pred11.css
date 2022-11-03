@@ -1,0 +1,35 @@
+.relativno {
+    background-color: aquamarine;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+.apsolutni1, .apsolutni2 {
+    position: absolute;
+    top: 200px;
+
+}
+
+.apsolutni1 {
+    background-color: antiquewhite;
+}
+
+.apsolutni2 {
+    background-color: blueviolet;
+}
+
+.fiksni {
+    background-color: aliceblue;
+    position: fixed;
+    left: 0px;
+    bottom: 100px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.inline-flex-container {
+    display: inline-flex;
+}
