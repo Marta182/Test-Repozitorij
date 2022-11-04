@@ -1,0 +1,50 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    height: 200px;
+}
+.glavni {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: darkcyan;
+    justify-content: space-between;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    justify-content: space-around;
+    height: 80vh;
+    row-gap: 20px;
+}
+
+header {
+    display: flex;
+    background-color: aquamarine;
+    flex-basis: 100%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    flex-basis: 45%;
+    background-color: aquamarine;
+}
+
+footer {
+    display:flex;
+    flex-basis:100%;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
